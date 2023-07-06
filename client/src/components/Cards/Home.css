@@ -1,0 +1,152 @@
+.Home{
+    padding-top: 5px;
+    background-color: rgb(1, 36, 49);
+    padding-bottom: 69px;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin-top: 7%;
+    margin-bottom: 25px;
+padding-bottom: 15px;
+color: rgb(238, 155, 0);
+text-shadow: 1px 1px 2px grey;
+}
+#title2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    margin-bottom: 25px;
+padding-bottom: 15px;
+color: rgb(238, 155, 0);
+text-shadow: 1px 1px 2px grey;
+
+}
+.subtitle{
+    background-color: crimson;
+    color: rgb(146, 180, 187);
+    border-radius: 25px;
+    margin-left: 105px;
+    margin-right: 105px;
+    
+}
+.Cards{
+    background-color: rgb(0, 18, 25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.country{
+    background-color: rgb(0, 18, 25);
+    padding-bottom: 92px;
+}
+#Card{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    justify-content: space-around;
+    
+}
+#Card2{
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    justify-content: space-around;
+    border: solid;
+    border-color: aliceblue;
+}
+#button1{
+    border: 0.5px;
+    border-style: solid ;
+    padding: 6px;
+    font-size: 20px;
+    margin-top: 26px;
+    background-color: crimson;
+    border-color: rgb(36, 15, 7);
+    color: rgb(255, 115, 0);
+ 
+}
+.text{
+    margin-top: 122px;
+    margin-bottom: 122px;
+}
+#Text{
+ color: rgb(252, 252, 252);
+    text-shadow: 1px 1px 2px grey;
+}
+#Text2{
+    color: rgb(155, 34, 38);
+}
+.t1{
+    color: aliceblue;
+}
+.HP{
+display: flex;
+
+}
+.Orderbar{
+    background-color: rgba(0, 255, 255, 0);
+
+
+}
+.Filtrado{
+    flex-direction: column;
+    
+}
+#Order{
+    appearance:none ;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    padding: 15px;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+    border-radius: 5px;
+}
+#Filter{
+    appearance:none ;
+    color: crimson;
+    margin-bottom: 140px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+    border-radius: 5px;
+}
+#Filter2{
+    appearance:none ;
+    color: crimson;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+    border-radius: 5px;
+}
+#reset{
+   padding: 10px;
+   color:chartreuse;
+    background-color: rgb(10, 32, 11);
+   border-color: aliceblue;
+    border-radius: 10px;
+}
+#Previous{
+    color: crimson;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+}
+#Next{
+    color: crimson;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+}
+#Buttons{
+    color:chartreuse;
+    background-color: rgb(10, 32, 11);
+   border-color: aliceblue;
+}
