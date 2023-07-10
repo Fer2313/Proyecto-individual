@@ -19,10 +19,22 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
-
+const { Client } = require('pg')
+const port = 3000;
 // Syncing all the models at once.
+const client = new Client({connectionString: process.env.DATABASE_URL})
+
+server.get("/ping", async(req,res)=>{
+  await client.connect()
+const respuesta = await client.query('SELECT $1::text as message', ['Hello world!'])
+console.log(respuesta.rows[0].message) // Hello world!
+await client.end()
+res.json(respuesta.rows[0].message)
+})
+
+
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+  server.listen(port, () => {
+    console.log(`%s listening at ${port}`); // eslint-disable-line no-console
   });
 }).catch(err=>console.log(err.message));
