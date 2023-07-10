@@ -1,6 +1,5 @@
 import { useState,useEffect } from "react"
 import "./NavBar.css"
-import icono from "../Imagenes/png-transparent-computer-icons-m.png"
 import { useDispatch } from "react-redux"
 import { get_Country} from "../Redux/actions/actions"
 import { Link } from "react-router-dom"
@@ -26,7 +25,7 @@ export default function SearchBar(){
         <div className="nav">
         <input className="input" onChange={(e)=>searchCountries(e)} value={countries} type='text' name="search" placeholder="Write the name of a country"></input>
         <Link to="/country">
-        <button className="button" onClickCapture={()=>onSearch(countries)} onClick={(e)=>setImput(e)}><img src={icono} alt="icono"/></button>
+        <button className="button" onClickCapture={()=>onSearch(countries)} onClick={(e)=>setImput(e)}>0</button>
         </Link>
         </div>
    <div className="Buttons">

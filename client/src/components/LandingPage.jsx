@@ -4,14 +4,9 @@ import { Link } from "react-router-dom"
 import axios from "axios"
 import { useEffect } from "react"
 export default function LandingPage(){
-const [mouse,setMouse]=useState(true)
-function handlerMouse(){
-    setMouse(!mouse)
-}
-
 useEffect(() => { 
     
- axios.get("http://localhost:3001")
+ axios.get("https://countrieswww.fly.dev")
   }, []);
 
 return(
@@ -21,7 +16,12 @@ return(
     <h1 id="text">
         Welcome to App!!
     </h1>
-    <Link to="/home"><button id={mouse?"button":"button2"} onMouseEnter={handlerMouse} onMouseLeave={handlerMouse}>Home</button></Link>
+    <div className="flex items-center justify-center">
+        <Link to="/home">
+            <button class="bg-slate-900">Home</button>
+            <button class="bg-slate-500">hola</button>
+            </Link></div>
+    
     </div>
     </div>
 )
