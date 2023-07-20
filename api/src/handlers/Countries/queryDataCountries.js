@@ -1,5 +1,5 @@
 const { Sequelize } = require("sequelize");
-const {Country}=require("../../db");
+const {Country, Activity}=require("../../db");
 async function getByQueryCountries(name) {
     const pais= await Country.findOne({
         where:{name:{[Sequelize.Op.iLike]:`%${name}%`}},
