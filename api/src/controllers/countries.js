@@ -6,17 +6,9 @@ const {Country}=require("../db")
 
 async function saveCountries(req,res) {
     try {
-    const pais= await Country.findOne({
-        where:{name:"Andorra"}
-    })
-    if (pais) {
-       return res.status(200).send("Hay paises cargados")
-    } else{
         const result= await saveCountry()
        const Create = await Country.bulkCreate(result,{returning:true})
         res.status(200).send(Create); 
-    }
-    
     } catch (error) {
         res.status(500).send('Error al guardar los datos en la base de datos.');
     }
