@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react"
+import { useState } from "react"
 import "./NavBar.css"
 import { useDispatch } from "react-redux"
 import { get_Country} from "../Redux/actions/actions"

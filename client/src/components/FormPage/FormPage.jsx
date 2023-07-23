@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { get_Continent ,reset} from '../../Redux/actions/actions'
-import {Validations,NoRepeat} from './validations'
+import { get_Continent } from '../../Redux/actions/actions'
+import {Validations} from './validations'
 import {Link} from "react-router-dom"
 import "./FormPage.css"
 import axios from "axios"

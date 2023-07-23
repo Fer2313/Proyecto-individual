@@ -5,7 +5,7 @@ import "./Paginate"
 import { useDispatch, useSelector } from "react-redux"
 import { useState, useEffect } from "react"
 import axios from "axios"
-import { get_Continent, get_Act_Country, get_Order_A_Z, get_Order_Z_A, population_A, population_D, reset, resetC } from "../../Redux/actions/actions"
+import { get_Continent, get_Act_Country, get_Order_A_Z, get_Order_Z_A, population_A, population_D, resetC } from "../../Redux/actions/actions"
 import Paginate from "./Paginate"
 const URL = "https://countrieswww.fly.dev/activities"
 export default function HomePage(props) {
