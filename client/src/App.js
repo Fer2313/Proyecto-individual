@@ -4,7 +4,6 @@ import { Route, Routes} from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import HomePage from './components/HomePage/HomePage';
 import SearchBar from './components/SearchBar';
-import Country from "./components/Country/Country"
 import Detail from './components/Detail/Detail';
 import FormPage from './components/FormPage/FormPage';
 import { useSelector } from 'react-redux';
@@ -17,7 +16,6 @@ import { useSelector } from 'react-redux';
       <Routes>
    <Route exact path='/' element={<LandingPage/>}/>
    <Route path='/home' element={<HomePage countries={countries}/>}/>
-   <Route path="/country" element={<Country/>}/>
    <Route path='/detail' element={<Detail/>}/>
    <Route path='/form' element={<FormPage/>}/>
       </Routes>

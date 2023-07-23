@@ -1,0 +1,33 @@
+#Previous{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: 1px;
+    color: crimson;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+}
+#Next{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 1px;
+    color: crimson;
+    border-color: aliceblue;
+    background-color: rgb(12, 1, 1);
+}
+#Buttons1{
+    border: 1px;
+    color: chartreuse;
+    background-color: rgb(10, 32, 11);
+    border-color: aliceblue;
+}
+#Buttons{
+    border: 1px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(10, 32, 11);
+   border-color: aliceblue;
+}
+#Buttons:active{
+color: chartreuse;
+}

@@ -1,19 +1,20 @@
-.navBar{
+.navBar {
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     justify-content: space-between;
-border: 1px;
-border-style: solid;
-border-color: rgb(0, 0, 0);
-border-radius: 0px;
-padding-top: 20px;
-padding-bottom: 20px;
-background-color: rgba(0, 95, 115);
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 95, 115);
 }
-.navBar2{
+
+.navBar2 {
     display: flex;
     justify-content: space-between;
     border: 1px;
@@ -24,51 +25,88 @@ background-color: rgba(0, 95, 115);
     padding-bottom: 20px;
     background-color: rgba(0, 95, 115);
 }
-.button{
+
+.button {
     margin-left: 5px;
     background-color: rgb(10, 147, 150);
     border-radius: 10px;
-    
+
 }
-.input{
+
+.input {
     border: 1px;
-   border-style: solid;
+    border-style: solid;
+    border-radius: 5px;
+    padding-left: 5px;
     background-color: rgb(255, 255, 255);
-    padding-top: 4.5px;
-    padding-bottom: 4.5px;
-    padding-right: 20px;
+    width: 245px;
+    height: 27px;
     border-color: rgb(0, 0, 0);
-    
-    
+
+
 }
-.nav{
-    border: 0.2px;
-display: flex;
-border-style:solid;
-border-color: rgb(233, 216, 166);
-align-items: center;
-justify-content: center;
-background-color: rgba(155, 34, 38, 0);
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 10px;
-padding-right: 10px;
-border-radius: 20px;
+
+.nav {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(155, 34, 38, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
 }
-.Buttons{
+
+.Buttons {
 
     display: flex;
-   
-align-items: center;
-padding-top: 0px;
-padding-bottom: 0px;
+
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-#Button1{
-background-color: rgb(226, 43, 128);
-color: aliceblue;
+
+#Button1 {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px;
+    border-radius: 15px;
+    background-color: rgb(243, 90, 161);
+    color: aliceblue;
 }
+
+#Button1:hover {
+    padding: 10.5px;
+    font-size: 16px;
+    background-color: rgb(240, 20, 122);
+    color: aliceblue;
+}
+
 #Button2{
- margin-left: 120px;
- background-color: crimson;
- border-radius: 25px;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px;
+    margin-left: 60px;
+    margin-right: 20px;
+    background-color: rgb(228, 120, 142);
+    border-radius: 15px;
+}
+#Button2:hover{
+    background-color: rgb(231, 55, 90);
+}
+
+#lupa {
+    position: absolute;
+    left: 255px;
+    top: 34px;
 }

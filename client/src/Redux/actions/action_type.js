@@ -7,6 +7,7 @@ const GET_ORDER_Z_A="GET_ORDER_Z_A"
 const POPULATION_A="POPULATION_A"
 const POPULATION_D="POPULATION_D"
 const RESET ="RESET"
+const RESETC="RESETC"
  module.exports={
     GET_COUNTRIES,
     GET_COUNTRY,
@@ -16,5 +17,6 @@ const RESET ="RESET"
     GET_ORDER_Z_A,
     POPULATION_A,
     POPULATION_D,
-    RESET
+    RESET,
+    RESETC
  }

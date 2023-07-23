@@ -18,8 +18,7 @@ return(
     </h1>
     <div className="flex items-center justify-center">
         <Link to="/home">
-            <button class="bg-slate-900">Home</button>
-            <button class="bg-slate-500">hola</button>
+            <button className="mi-boton">Ingresar</button>
             </Link></div>
     
     </div>

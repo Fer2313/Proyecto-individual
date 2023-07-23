@@ -6,7 +6,7 @@ import {Validations,NoRepeat} from './validations'
 import {Link} from "react-router-dom"
 import "./FormPage.css"
 import axios from "axios"
-const URL= "http://localhost:3001/activities"
+const URL= "https://countrieswww.fly.dev/activities"
 export default function FormPage() {
  
     const dispatch= useDispatch()
@@ -79,7 +79,9 @@ export default function FormPage() {
         
     }
    function handleHome(){
-    dispatch(reset())
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
    } 
    function handleClick(e){ 
     const value=e.target.value
@@ -157,7 +159,7 @@ setCountry(countrys)
     )}):null} 
     
 </div>
- <button onClick={handleSummit}>Submit</button>
+ <button id='Submit' onClick={handleSummit}>Submit</button>
    </form>
    <Link to="/home">
     <button id='Button' onClick={handleHome}>Volver</button>

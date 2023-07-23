@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux"
 import { get_Country} from "../Redux/actions/actions"
 import { Link } from "react-router-dom"
 import { useLocation } from "react-router-dom"
-
+import { PiMagnifyingGlassBold } from "react-icons/pi"
 export default function SearchBar(){
    const location =useLocation()
    const dispatch = useDispatch()
@@ -24,8 +24,8 @@ export default function SearchBar(){
         
         <div className="nav">
         <input className="input" onChange={(e)=>searchCountries(e)} value={countries} type='text' name="search" placeholder="Write the name of a country"></input>
-        <Link to="/country">
-        <button className="button" onClickCapture={()=>onSearch(countries)} onClick={(e)=>setImput(e)}>0</button>
+        <Link to="/detail">
+         {countries.length ? <PiMagnifyingGlassBold id="lupa" color="black" size={23} onClickCapture={()=>onSearch(countries)} onClick={(e)=>setImput(e)}></PiMagnifyingGlassBold>:null}
         </Link>
         </div>
    <div className="Buttons">

@@ -44,12 +44,34 @@ display: flex;
     border-color: rgba(0, 0, 0, 0);
 }
 #Button{
-    background-color: brown;
-    border-color: black;
+    margin-top: 40px;
+    border:0px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    cursor: pointer;
 }
-
+#Button:hover{
+    background-color: rgb(236, 203, 203);
+}
 #warning{
     font-size: 13px;
     color: red;
+}
+#Submit{
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 15px;
+    display: inline-block;
+  background-color: rgb(255, 82, 82);
+  color: aliceblue;
+  border: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  cursor: pointer;
+}
+#Submit:hover{
+    background-color: rgb(255, 59, 59);
 }

@@ -22,23 +22,20 @@ export default function Card(props) {
      }
      
   return (
-   
+
    <div  className='Cards'>
       {props.currentData.map((countries)=>(
-      <Link to="/country"> 
-         <div key={countries.id} onClick={()=>onSearch(countries.name)} id="Card" >
-          <img src={countries.image} alt="img"/>
+      <Link id="Card" to="/detail"> 
+         <div key={countries.id} onClick={()=>onSearch(countries.name)}  > 
+          <img src={countries.image} height={200} width={320} alt="img"/>
           <h3 id='Text'>{countries.name}</h3>
           <h4 id='Text2'>{countries.continent}</h4>
-          <Link to="/detail">
-          <h3 className='subtitle'>Detail</h3>
-          </Link>
         </div>
-      </Link>
+    </Link>
       ) 
       )
       }
-      
     </div>
+
   )
 }

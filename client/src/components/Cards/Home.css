@@ -1,7 +1,7 @@
 .Home{
-    padding-top: 5px;
+    padding-top: 25px;
     background-color: rgb(1, 36, 49);
-    padding-bottom: 69px;
+    padding-bottom: 25px;
 }
 
 #title{
@@ -33,31 +33,29 @@ text-shadow: 1px 1px 2px grey;
     
 }
 .Cards{
-    background-color: rgb(0, 18, 25);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Esto crea 2 columnas de igual tamaño */
+    gap: 10px;
 }
 .country{
     background-color: rgb(0, 18, 25);
-    padding-bottom: 92px;
 }
 #Card{
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 25px;
-    justify-content: space-around;
-    
-}
-#Card2{
-    padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    justify-content: space-around;
     border: solid;
+    border-color: rgb(1, 36, 49);
+    justify-content: space-between;
+    transition:background-color 0.5s ease;
+}
+#Card:hover{
+
+   
     border-color: aliceblue;
 }
 #button1{
@@ -76,10 +74,13 @@ text-shadow: 1px 1px 2px grey;
     margin-bottom: 122px;
 }
 #Text{
+    height: 40px;
+    font-size: medium;
  color: rgb(252, 252, 252);
     text-shadow: 1px 1px 2px grey;
 }
 #Text2{
+    font-size: small;
     color: rgb(155, 34, 38);
 }
 .t1{
@@ -87,10 +88,10 @@ text-shadow: 1px 1px 2px grey;
 }
 .HP{
 display: flex;
-
+justify-content: center;
 }
 .Orderbar{
-    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(85, 255, 255, 0);
 
 
 }
@@ -102,7 +103,7 @@ display: flex;
     appearance:none ;
     color: crimson;
     margin-top: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 10px;
     padding: 15px;
     border-color: aliceblue;
     background-color: rgb(12, 1, 1);
@@ -111,7 +112,7 @@ display: flex;
 #Filter{
     appearance:none ;
     color: crimson;
-    margin-bottom: 140px;
+    margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 15px;
@@ -135,18 +136,4 @@ display: flex;
    border-color: aliceblue;
     border-radius: 10px;
 }
-#Previous{
-    color: crimson;
-    border-color: aliceblue;
-    background-color: rgb(12, 1, 1);
-}
-#Next{
-    color: crimson;
-    border-color: aliceblue;
-    background-color: rgb(12, 1, 1);
-}
-#Buttons{
-    color:chartreuse;
-    background-color: rgb(10, 32, 11);
-   border-color: aliceblue;
-}
+

@@ -1,9 +1,10 @@
 
-import {GET_COUNTRIES,GET_COUNTRY, GET_CONTINENTS, GET_ACT_COUNTRY, GET_ORDER_A_Z, GET_ORDER_Z_A,POPULATION_A,POPULATION_D,RESET} from "./actions/action_type"
+import {GET_COUNTRIES,GET_COUNTRY, GET_CONTINENTS, GET_ACT_COUNTRY, GET_ORDER_A_Z, GET_ORDER_Z_A,POPULATION_A,POPULATION_D,RESET,RESETC} from "./actions/action_type"
 const initialState = {
     countries: [],
     countriesOrigin: [],
     country: [],
+    activ:[],
     activities: [],
 } 
 export function reducer(state=initialState,accions) {
@@ -18,7 +19,7 @@ export function reducer(state=initialState,accions) {
         case GET_COUNTRY:
           return{
             ...state,
-          country:accions.payload
+          country:[accions.payload]
           }
         case GET_CONTINENTS:
           const countriesCopy=[...state.countriesOrigin]
@@ -38,10 +39,11 @@ export function reducer(state=initialState,accions) {
     filter.push(activity[i])
    }
  }
+ console.log(filter)
   }
           return{
             ...state,
-            countries:filter,
+            activ:filter,
           }
           case GET_ORDER_A_Z:
             const countriesOC=[...state.countriesOrigin]
@@ -118,6 +120,11 @@ export function reducer(state=initialState,accions) {
               ...state,
               countries:countriesCopy3
             }
+            case RESETC:
+              return{
+                ...state,
+                country:[]
+              }
         default:
             return {...state}
     }
