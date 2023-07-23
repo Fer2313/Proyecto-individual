@@ -4,6 +4,8 @@ const getAllData=require("../handlers/Activities/getAllData")
 async function createActivityByBody(req,res) {
     const {countryId,name,dificulty,duration,season}=req.body
     try { 
+        
+        if(pais){}
         const result= await createActivity(countryId,name,dificulty,duration,season)
         res.status(200).send(result)
     } catch (error) {
