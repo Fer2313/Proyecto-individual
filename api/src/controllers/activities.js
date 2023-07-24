@@ -13,7 +13,12 @@ async function createActivityByBody(req,res) {
     }
 }
 async function getAllActivities(req,res) {
+    try{
         const result=await getAllData()
         res.status(200).send(result)
+    }
+    catch{
+        res.status(400).send({err: error.message})
+    }
 }
 module.exports={createActivityByBody,getAllActivities};
