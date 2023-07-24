@@ -31,14 +31,15 @@ console.log(act_Country)
         setPage({ ...page, currentPage: parseInt(n.target.value)});
     }
     const [activities, setActivities] = useState()
+    const dispatch = useDispatch()
     useEffect(() => {
         axios.get("https://countrieswww.fly.dev")
         axios.get(URL).then((data) => {
             setActivities(data.data)
         })
          dispatch(resetC())
-    }, []);
-    const dispatch = useDispatch()
+    }, [dispatch]);
+   
     function handleReset() {
         window.location.reload();
     }
