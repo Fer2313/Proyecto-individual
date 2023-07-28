@@ -3,9 +3,7 @@ const getAllData=require("../handlers/Activities/getAllData")
 
 async function createActivityByBody(req,res) {
     const {countryId,name,dificulty,duration,season}=req.body
-    try { 
-        
-        if(pais){}
+    try {
         const result= await createActivity(countryId,name,dificulty,duration,season)
         res.status(200).send(result)
     } catch (error) {
@@ -17,8 +15,8 @@ async function getAllActivities(req,res) {
         const result=await getAllData()
         res.status(200).send(result)
     }
-    catch{
-        res.status(400).send({err: error.message})
+    catch (error){
+        res.status(400).send({err:error.message})
     }
 }
 module.exports={createActivityByBody,getAllActivities};
