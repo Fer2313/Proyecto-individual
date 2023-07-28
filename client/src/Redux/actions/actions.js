@@ -1,6 +1,6 @@
 import {GET_COUNTRIES,GET_COUNTRY,GET_CONTINENTS,GET_ACT_COUNTRY,GET_ORDER_A_Z,GET_ORDER_Z_A,POPULATION_A,POPULATION_D, RESET, RESETC} from "./action_type"
 import axios from "axios"
-const URL= "https://countrieswww.fly.dev"
+const URL= "https://countriesdbpi.fly.dev"
 export function get_Countries() {
     return function (dispatch) {
        axios.get(URL).then((data)=>dispatch({

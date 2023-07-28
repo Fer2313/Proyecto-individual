@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import { get_Continent, get_Act_Country, get_Order_A_Z, get_Order_Z_A, population_A, population_D, resetC } from "../../Redux/actions/actions"
 import Paginate from "./Paginate"
-const URL = "https://countrieswww.fly.dev/activities"
+const URL = "https://countriesdbpi.fly.dev/activities"
 export default function HomePage(props) {
     const countries = [...props.countries]
     let [page, setPage] = useState({ currentPage: 1, pageSize: 9 })
@@ -33,7 +33,7 @@ console.log(act_Country)
     const [activities, setActivities] = useState()
     const dispatch = useDispatch()
     useEffect(() => {
-        axios.get("https://countrieswww.fly.dev")
+        axios.get("https://countriesdbpi.fly.dev")
         axios.get(URL).then((data) => {
             setActivities(data.data)
         })

@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for countrieswww on 2023-07-07T14:28:29-03:00
+# fly.toml app configuration file generated for countriesdbpi on 2023-07-28T15:46:11-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "countrieswww"
+app = "countriesdbpi"
 primary_region = "scl"
 
 [http_service]
