@@ -20,7 +20,7 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 const { Client } = require('pg')
-const port = 3000;
+const port = process.env.PORT || 3000;
 // Syncing all the models at once.
 const client = new Client({connectionString: process.env.DATABASE_URL})
 
