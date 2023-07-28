@@ -10,7 +10,7 @@ require('./db.js');
 const server = express();
 
 server.name = 'API';
-app.use(cors({ origin: 'https://proyecto-individual-six.vercel.app' }));
+server.use(cors({ origin: 'https://proyecto-individual-six.vercel.app' }));
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
