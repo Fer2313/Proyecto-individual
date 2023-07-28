@@ -1,12 +1,6 @@
 import "./LandingPage.css"
 import { Link } from "react-router-dom"
-import axios from "axios"
-import { useEffect } from "react"
 export default function LandingPage(){
-useEffect(() => { 
-    
- axios.get("https://countrieswww.fly.dev")
-  }, []);
 
 return(
     

@@ -25,7 +25,6 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "@flydotio/dockerfile": "^0.2.16",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
     "supertest": "^6.0.1",
