@@ -7,7 +7,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import { get_Continent, get_Act_Country, get_Order_A_Z, get_Order_Z_A, population_A, population_D, resetC } from "../../Redux/actions/actions"
 import Paginate from "./Paginate"
-const URL = "https://gfhfhg.fly.dev"
+const URL = "https://countriesapppw.fly.dev"
 export default function HomePage(props) {
     const countries = [...props.countries]
     let [page, setPage] = useState({ currentPage: 1, pageSize: 9 })
