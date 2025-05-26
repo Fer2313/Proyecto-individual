@@ -6,7 +6,7 @@ import {Validations} from './validations'
 import {Link} from "react-router-dom"
 import "./FormPage.css"
 import axios from "axios"
-const URL= "https://countriesapppw.fly.dev/activities"
+const URL= "https://proyecto-individual-xz8a.onrender.com/activities"
 export default function FormPage() {
  
     const dispatch= useDispatch()
